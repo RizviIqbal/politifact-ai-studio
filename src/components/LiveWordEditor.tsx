@@ -469,13 +469,24 @@ export const LiveWordEditor: React.FC = () => {
 
                   {/* Popover for Synonym Selection & Custom Word Input */}
                   {isSelected && (
-                    <div className="absolute top-full left-0 mt-2 z-30 bg-[#1E293B] border border-slate-700 p-4 rounded-xl max-w-[280px] w-max space-y-3 font-mono shadow-2xl animate-fade-in text-xs">
-                      <div className="flex items-center justify-between border-b border-slate-700 pb-2">
-                        <span className="text-[11px] font-bold text-amber-400 uppercase tracking-wider">
-                          Edit: &quot;{word}&quot;
-                        </span>
-                        <span className="text-[10px] text-slate-400 font-sans">Click to swap</span>
-                      </div>
+                    <>
+                      {/* Mobile Backdrop Overlay */}
+                      <div
+                        className="fixed inset-0 bg-black/60 sm:hidden z-40"
+                        onClick={() => setActiveTokenIdx(null)}
+                      />
+                      <div className="fixed inset-x-4 top-1/4 sm:top-full sm:inset-x-auto sm:left-0 z-50 sm:z-30 bg-[#1E293B] border border-slate-700 p-4 rounded-2xl max-w-xs sm:max-w-[280px] w-auto sm:w-max space-y-3 font-mono shadow-2xl animate-fade-in text-xs">
+                        <div className="flex items-center justify-between border-b border-slate-700 pb-2">
+                          <span className="text-xs font-bold text-amber-400 uppercase tracking-wider">
+                            Edit: &quot;{word}&quot;
+                          </span>
+                          <button
+                            onClick={() => setActiveTokenIdx(null)}
+                            className="text-xs text-slate-400 hover:text-white font-sans px-1"
+                          >
+                            ✕ Close
+                          </button>
+                        </div>
 
                       {/* Preset Options if Available */}
                       {hasPresetSynonyms ? (
@@ -546,9 +557,10 @@ export const LiveWordEditor: React.FC = () => {
                         </button>
                       </div>
                     </div>
-                  )}
-                </div>
-              );
+                  </>
+                )}
+              </div>
+            );
             })}
           </div>
 

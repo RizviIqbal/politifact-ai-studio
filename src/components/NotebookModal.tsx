@@ -93,14 +93,15 @@ with open("public/data/model_weights.json", "w") as f:
             <a
               href="/CSE440_Project_.ipynb"
               download="CSE440_Project_.ipynb"
-              className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition-all shadow-md active:scale-95 shadow-indigo-600/25"
+              className="flex items-center space-x-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition-all shadow-md active:scale-95 shadow-indigo-600/25"
             >
               <Download className="w-3.5 h-3.5" />
-              <span>Download .ipynb</span>
+              <span className="hidden sm:inline">Download .ipynb</span>
+              <span className="sm:hidden">Download</span>
             </a>
             <button
               onClick={onClose}
-              className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
+              className="p-1.5 sm:p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
             >
               <X className="w-5 h-5" />
             </button>

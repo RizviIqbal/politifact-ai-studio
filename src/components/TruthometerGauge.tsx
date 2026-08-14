@@ -31,7 +31,7 @@ export const TruthometerGauge: React.FC<TruthometerGaugeProps> = ({
   return (
     <div className="flex flex-col items-center justify-center w-full space-y-5 font-sans">
       {/* High-Tech Glowing Dial Gauge */}
-      <div className="relative w-52 h-52 flex items-center justify-center">
+      <div className="relative w-44 h-44 sm:w-52 sm:h-52 flex items-center justify-center">
         {/* Ambient Glow Background */}
         <div
           className="absolute inset-4 rounded-full blur-2xl opacity-25 transition-all duration-700 pointer-events-none"

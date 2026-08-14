@@ -524,15 +524,15 @@ export const MultiModelComparisonMatrix: React.FC<MultiModelComparisonMatrixProp
       </div>
 
       {/* Control Bar: Filters & Metric Selection */}
-      <div className="bg-[#111827] p-4 rounded-2xl border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-xs shadow-xl">
+      <div className="bg-[#111827] p-4 rounded-2xl border border-slate-800 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 font-mono text-xs shadow-xl">
         {/* Family Filter */}
-        <div className="flex items-center gap-2">
-          <span className="text-slate-400 font-bold uppercase">Architecture:</span>
+        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+          <span className="text-slate-400 font-bold uppercase text-[11px] sm:text-xs">Architecture:</span>
           {(['All', 'Transformer', 'RNN', 'Classical'] as const).map((fam) => (
             <button
               key={fam}
               onClick={() => setFamilyFilter(fam)}
-              className={`px-3 py-1 rounded-lg transition-all font-bold ${
+              className={`px-3 py-1 rounded-lg transition-all font-bold text-xs ${
                 familyFilter === fam
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'bg-[#0B0F17] text-slate-400 hover:text-white border border-slate-800'

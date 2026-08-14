@@ -253,7 +253,10 @@ export const ModelComparisonDashboard: React.FC = () => {
             </div>
 
             {confusionData && confusionData.matrices[selectedMatrixModel] ? (
-              <div className="pt-6 overflow-x-auto">
+              <div className="pt-4 overflow-x-auto">
+                <div className="sm:hidden text-right pb-2 text-[10px] font-mono text-indigo-300">
+                  👉 Swipe horizontally to inspect 6×6 matrix
+                </div>
                 <div className="min-w-[560px]">
                   {/* Column Headers */}
                   <div className="grid grid-cols-7 gap-2 mb-3">

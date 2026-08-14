@@ -84,9 +84,9 @@ export const TsneInteractiveExplorer: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
         {/* Left Scatter Canvas */}
-        <div className="lg:col-span-7 h-[420px] bg-[#111827] border border-slate-800 rounded-2xl p-4 relative shadow-xl">
+        <div className="lg:col-span-7 h-[340px] sm:h-[420px] bg-[#111827] border border-slate-800 rounded-2xl p-3 sm:p-4 relative shadow-xl">
           <ResponsiveContainer width="100%" height="100%">
             <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#1E293B" />

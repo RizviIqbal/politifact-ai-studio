@@ -97,6 +97,7 @@ export const HeroPredictionDemo: React.FC = () => {
   const [hoveredToken, setHoveredToken] = useState<DetailedTokenImpact | null>(null);
   const [selectedToken, setSelectedToken] = useState<DetailedTokenImpact | null>(null);
   const [tokenFilter, setTokenFilter] = useState<'all' | 'significant' | 'deceptive' | 'truthful'>('all');
+  const [mobileTab, setMobileTab] = useState<'verdict' | 'heatmap'>('verdict');
 
   useEffect(() => {
     if (!model || !statement.trim()) {
@@ -338,8 +339,36 @@ export const HeroPredictionDemo: React.FC = () => {
             </div>
           </section>
 
+          {/* Mobile View Switcher Tabs (lg:hidden) */}
+          <div className="flex lg:hidden bg-[#0B0F17] p-1.5 rounded-2xl border border-slate-800 font-mono text-xs shadow-lg">
+            <button
+              onClick={() => setMobileTab('verdict')}
+              className={`flex-1 py-2.5 rounded-xl font-bold flex items-center justify-center gap-1.5 transition-all text-xs ${
+                mobileTab === 'verdict'
+                  ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Cpu className="w-3.5 h-3.5" />
+              <span>Verdict & Gauge ({activePred ? `${(activePred.confidence * 100).toFixed(0)}%` : '--'})</span>
+            </button>
+            <button
+              onClick={() => setMobileTab('heatmap')}
+              className={`flex-1 py-2.5 rounded-xl font-bold flex items-center justify-center gap-1.5 transition-all text-xs ${
+                mobileTab === 'heatmap'
+                  ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Microscope className="w-3.5 h-3.5" />
+              <span>Token Heatmap</span>
+            </button>
+          </div>
+
           {/* Token Feature Attribution Heatmap Panel */}
-          <section className="bg-[#111827] border border-slate-800 p-5 sm:p-6 rounded-2xl space-y-4 shadow-xl">
+          <section className={`bg-[#111827] border border-slate-800 p-5 sm:p-6 rounded-2xl space-y-4 shadow-xl ${
+            mobileTab === 'heatmap' ? 'block' : 'hidden lg:block'
+          }`}>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
               <div className="flex items-center gap-2">
                 <Microscope className="w-4 h-4 text-amber-400" />
@@ -492,7 +521,9 @@ export const HeroPredictionDemo: React.FC = () => {
         </div>
 
         {/* Right Column: Truthometer Cockpit & Live Softmax Distribution (5 Cols) */}
-        <div className="lg:col-span-5 flex flex-col gap-6">
+        <div className={`lg:col-span-5 flex flex-col gap-6 ${
+          mobileTab === 'verdict' ? 'block' : 'hidden lg:block'
+        }`}>
           <section className="bg-[#111827] border border-slate-800 p-6 rounded-2xl shadow-xl space-y-5 flex flex-col justify-between">
             <div className="flex items-center justify-between border-b border-slate-800 pb-3 font-mono text-xs">
               <span className="text-amber-400 font-bold uppercase tracking-wider flex items-center gap-1.5">

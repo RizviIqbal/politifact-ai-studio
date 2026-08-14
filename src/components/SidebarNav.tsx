@@ -20,8 +20,14 @@ interface SidebarNavProps {
   setActiveHub: (hub: MainHubType) => void;
   onOpenTour: () => void;
   onOpenNotebook: () => void;
+  onSelectSubtool?: (subtoolId: string) => void;
   isMobileDrawerOpen?: boolean;
   setIsMobileDrawerOpen?: (open: boolean) => void;
+}
+
+interface SubtoolEntry {
+  id: string;
+  name: string;
 }
 
 interface NavItem {
@@ -39,7 +45,7 @@ interface NavItem {
     dotColor: string;
     badgeStyle: string;
   };
-  subtools: string[];
+  subtools: SubtoolEntry[];
 }
 
 const NAV_HUBS: NavItem[] = [
@@ -58,7 +64,11 @@ const NAV_HUBS: NavItem[] = [
       dotColor: 'bg-amber-400 shadow-[0_0_8px_#F59E0B]',
       badgeStyle: 'bg-amber-500/10 text-amber-300 border-amber-500/30',
     },
-    subtools: ['Claim Classifier', 'Word-Swap Simulator', 'Truth Spectrum'],
+    subtools: [
+      { id: 'classifier', name: 'Claim Classifier & Gauge' },
+      { id: 'editor', name: 'Word-Swap Simulator' },
+      { id: 'spectrum', name: 'Truth Spectrum' },
+    ],
   },
   {
     id: 'simulator',
@@ -75,7 +85,12 @@ const NAV_HUBS: NavItem[] = [
       dotColor: 'bg-indigo-400 shadow-[0_0_8px_#6366F1]',
       badgeStyle: 'bg-indigo-500/10 text-indigo-300 border-indigo-500/30',
     },
-    subtools: ['Architecture Matrix', 'Linear Pipeline', 'Bayesian Priors'],
+    subtools: [
+      { id: 'matrix', name: 'Architecture Matrix' },
+      { id: 'pipeline', name: 'Decision Pipeline' },
+      { id: 'tree', name: 'Decision Tree Rules' },
+      { id: 'priors', name: 'Bayesian Priors' },
+    ],
   },
   {
     id: 'research',
@@ -92,7 +107,13 @@ const NAV_HUBS: NavItem[] = [
       dotColor: 'bg-emerald-400 shadow-[0_0_8px_#10B981]',
       badgeStyle: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/30',
     },
-    subtools: ['Confusion Matrices', '2D t-SNE Explorer', 'McNemar Tests'],
+    subtools: [
+      { id: 'leaderboard', name: 'Confusion Matrices' },
+      { id: 'tsne', name: '2D t-SNE Explorer' },
+      { id: 'guide', name: 'Master Project Guide' },
+      { id: 'story', name: 'McNemar Tests' },
+      { id: 'about', name: 'Paper & Methodology' },
+    ],
   },
   {
     id: 'sandbox',
@@ -109,7 +130,13 @@ const NAV_HUBS: NavItem[] = [
       dotColor: 'bg-purple-400 shadow-[0_0_8px_#A855F7]',
       badgeStyle: 'bg-purple-500/10 text-purple-300 border-purple-500/30',
     },
-    subtools: ['Spot-The-Lie Arena', 'Batch Benchmark', 'Hyperparam Tuning'],
+    subtools: [
+      { id: 'quiz', name: 'Spot-The-Lie Arena' },
+      { id: 'benchmark', name: 'Batch Benchmark' },
+      { id: 'learning', name: 'Learning Lab' },
+      { id: 'sandbox', name: 'Hyperparam Tuning' },
+      { id: 'faceoff', name: 'Claim Face-Off' },
+    ],
   },
 ];
 
@@ -118,6 +145,7 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({
   setActiveHub,
   onOpenTour,
   onOpenNotebook,
+  onSelectSubtool,
   isMobileDrawerOpen = false,
   setIsMobileDrawerOpen,
 }) => {
@@ -125,12 +153,19 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({
 
   const handleSelectHub = (hubId: MainHubType) => {
     setActiveHub(hubId);
+    if (onSelectSubtool) onSelectSubtool('all');
+    if (setIsMobileDrawerOpen) setIsMobileDrawerOpen(false);
+  };
+
+  const handleSelectSubtoolClick = (hubId: MainHubType, subtoolId: string) => {
+    setActiveHub(hubId);
+    if (onSelectSubtool) onSelectSubtool(subtoolId);
     if (setIsMobileDrawerOpen) setIsMobileDrawerOpen(false);
   };
 
   return (
     <>
-      {/* 1. DESKTOP/TABLET SIDEBAR (Hidden on mobile phones: hidden md:flex) */}
+      {/* 1. DESKTOP/TABLET SIDEBAR */}
       <aside
         className={`hidden md:flex bg-[#0B0F17]/95 border-r border-slate-800/90 transition-all duration-300 flex-col justify-between select-none z-30 sticky top-0 h-screen font-sans backdrop-blur-xl ${
           isCollapsed ? 'w-24' : 'w-80'
@@ -141,7 +176,7 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({
           {!isCollapsed ? (
             <div
               className="cursor-pointer"
-              onClick={() => setActiveHub('desk')}
+              onClick={() => handleSelectHub('desk')}
               title="Go to Fact-Check Studio"
             >
               <StudioLogo size="md" showText={true} />
@@ -149,7 +184,7 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({
           ) : (
             <div
               className="mx-auto cursor-pointer p-1.5 rounded-xl hover:bg-slate-800/60 transition-all"
-              onClick={() => setActiveHub('desk')}
+              onClick={() => handleSelectHub('desk')}
               title="PolitiFact AI Studio"
             >
               <StudioLogo size="sm" showText={false} />
@@ -230,15 +265,16 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({
 
                 {/* Sub-tools Drawer */}
                 {isActive && !isCollapsed && (
-                  <div className="pl-12 pr-2 py-1.5 space-y-1.5 font-sans animate-fade-in">
-                    {hub.subtools.map((tool, tIdx) => (
-                      <div
-                        key={tIdx}
-                        className="text-slate-300 hover:text-white transition-all flex items-center gap-2.5 py-1 px-2.5 rounded-lg hover:bg-slate-800/50 text-[13px] font-medium cursor-pointer"
+                  <div className="pl-12 pr-2 py-1.5 space-y-1 font-sans animate-fade-in">
+                    {hub.subtools.map((tool) => (
+                      <button
+                        key={tool.id}
+                        onClick={() => handleSelectSubtoolClick(hub.id, tool.id)}
+                        className="w-full text-left text-slate-300 hover:text-white transition-all flex items-center gap-2.5 py-1 px-2.5 rounded-lg hover:bg-slate-800/50 text-[13px] font-medium"
                       >
                         <span className={`w-2 h-2 rounded-full flex-shrink-0 ${theme.dotColor}`} />
-                        <span>{tool}</span>
-                      </div>
+                        <span className="truncate">{tool.name}</span>
+                      </button>
                     ))}
                   </div>
                 )}
@@ -283,7 +319,7 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({
         </div>
       </aside>
 
-      {/* 2. MOBILE BOTTOM NAVIGATION DOCK (Native mobile feel: md:hidden) */}
+      {/* 2. MOBILE BOTTOM NAVIGATION DOCK */}
       <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0B0F17]/95 border-t border-slate-800/90 backdrop-blur-2xl px-2 py-1.5 flex items-center justify-around shadow-[0_-4px_25px_rgba(0,0,0,0.6)]">
         {NAV_HUBS.map((hub) => {
           const isActive = activeHub === hub.id;
@@ -338,10 +374,10 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({
                 </button>
               </div>
 
-              {/* Hub Links */}
+              {/* Hub Links & Subtools */}
               <div className="space-y-2 font-mono">
                 <span className="text-[11px] font-bold text-slate-400 uppercase tracking-widest px-1">
-                  Navigate Hubs
+                  Navigate Hubs & Tools
                 </span>
                 {NAV_HUBS.map((hub, idx) => {
                   const isActive = activeHub === hub.id;
@@ -349,27 +385,44 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({
                   const { theme } = hub;
 
                   return (
-                    <button
-                      key={hub.id}
-                      onClick={() => handleSelectHub(hub.id)}
-                      className={`w-full flex items-center gap-3 p-3 rounded-xl text-left border transition-all text-xs ${
-                        isActive
-                          ? `${theme.bgActive} ${theme.text} ${theme.borderActive} font-bold`
-                          : 'bg-[#111827] text-slate-300 border-slate-800'
-                      }`}
-                    >
-                      <div
-                        className={`p-2 rounded-lg ${
-                          isActive ? theme.iconBgActive : 'bg-slate-900 text-slate-400'
+                    <div key={hub.id} className="space-y-1">
+                      <button
+                        onClick={() => handleSelectHub(hub.id)}
+                        className={`w-full flex items-center gap-3 p-3 rounded-xl text-left border transition-all text-xs ${
+                          isActive
+                            ? `${theme.bgActive} ${theme.text} ${theme.borderActive} font-bold`
+                            : 'bg-[#111827] text-slate-300 border-slate-800'
                         }`}
                       >
-                        <Icon className="w-4 h-4" />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <span className="block font-bold text-sm truncate">{hub.label}</span>
-                        <span className="text-[11px] text-slate-400 block font-normal font-sans">Hub {idx + 1}</span>
-                      </div>
-                    </button>
+                        <div
+                          className={`p-2 rounded-lg ${
+                            isActive ? theme.iconBgActive : 'bg-slate-900 text-slate-400'
+                          }`}
+                        >
+                          <Icon className="w-4 h-4" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <span className="block font-bold text-sm truncate">{hub.label}</span>
+                          <span className="text-[11px] text-slate-400 block font-normal font-sans">Hub {idx + 1}</span>
+                        </div>
+                      </button>
+
+                      {/* Expanded Subtools in Mobile Drawer */}
+                      {isActive && (
+                        <div className="pl-4 pr-1 py-1 space-y-1">
+                          {hub.subtools.map((sub) => (
+                            <button
+                              key={sub.id}
+                              onClick={() => handleSelectSubtoolClick(hub.id, sub.id)}
+                              className="w-full text-left py-1.5 px-3 rounded-lg bg-slate-900/60 hover:bg-slate-800 text-slate-300 text-xs flex items-center gap-2 border border-slate-800/80"
+                            >
+                              <span className={`w-1.5 h-1.5 rounded-full ${theme.dotColor}`} />
+                              <span className="truncate">{sub.name}</span>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   );
                 })}
               </div>

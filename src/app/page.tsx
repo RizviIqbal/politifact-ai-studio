@@ -31,6 +31,7 @@ export default function Home() {
   const [activeHub, setActiveHub] = useState<MainHubType>('desk');
   const [isTourOpen, setIsTourOpen] = useState<boolean>(false);
   const [isNotebookOpen, setIsNotebookOpen] = useState<boolean>(false);
+  const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState<boolean>(false);
 
   return (
     <div className="min-h-screen flex text-[#F8FAFC] relative selection:bg-amber-500/30 selection:text-amber-200">
@@ -53,6 +54,8 @@ export default function Home() {
         setActiveHub={setActiveHub}
         onOpenTour={() => setIsTourOpen(true)}
         onOpenNotebook={() => setIsNotebookOpen(true)}
+        isMobileDrawerOpen={isMobileDrawerOpen}
+        setIsMobileDrawerOpen={setIsMobileDrawerOpen}
       />
 
       {/* Main Spacious Canvas */}
@@ -63,10 +66,11 @@ export default function Home() {
           setActiveHub={setActiveHub}
           onOpenTour={() => setIsTourOpen(true)}
           onOpenNotebook={() => setIsNotebookOpen(true)}
+          onToggleMobileNav={() => setIsMobileDrawerOpen(true)}
         />
 
-        {/* Main Content Area */}
-        <main className="flex-1 transition-all duration-300 py-6 px-3 sm:px-6 lg:px-8 max-w-7xl w-full mx-auto">
+        {/* Main Content Area (with safe bottom padding for mobile dock) */}
+        <main className="flex-1 transition-all duration-300 py-6 px-3 sm:px-6 lg:px-8 pb-28 md:pb-12 max-w-7xl w-full mx-auto">
           {/* Welcome Roadmap Banner (Hubs 2, 3, 4) */}
           <HubWelcomeBanner activeHub={activeHub} />
 

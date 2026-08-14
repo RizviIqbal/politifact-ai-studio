@@ -176,16 +176,16 @@ export const ModelComparisonDashboard: React.FC = () => {
                   return (
                     <div
                       key={`${item.model}-${item.representation || 'default'}-${idx}`}
-                      className="grid grid-cols-12 items-center gap-3 bg-[#0B0F17] p-3 rounded-xl border border-slate-800/80 hover:border-slate-700 transition-all"
+                      className="grid grid-cols-1 sm:grid-cols-12 items-center gap-3 bg-[#0B0F17] p-3 rounded-xl border border-slate-800/80 hover:border-slate-700 transition-all"
                     >
-                      <div className="col-span-4 text-slate-200 font-bold truncate">
+                      <div className="sm:col-span-4 text-slate-200 font-bold truncate">
                         <span className="text-slate-500 font-normal mr-2">#{idx + 1}</span>
                         {idx === 0 && <Trophy className="w-3.5 h-3.5 text-emerald-400 inline mr-1" />}
                         {item.model}
-                        <span className="text-[10px] text-slate-400 font-normal block">{repLabel || item.type}</span>
+                        <span className="text-xs text-slate-400 font-normal block font-sans">{repLabel || item.type}</span>
                       </div>
 
-                      <div className="col-span-8 space-y-1.5">
+                      <div className="sm:col-span-8 space-y-1.5">
                         {/* Accuracy Bar */}
                         <div className="flex items-center gap-2">
                           <span className="text-[10px] text-slate-400 w-12">Acc:</span>

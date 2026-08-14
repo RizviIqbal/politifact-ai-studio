@@ -349,7 +349,7 @@ export const HeroPredictionDemo: React.FC = () => {
               </div>
 
               {/* Filter Pills */}
-              <div className="flex items-center gap-1.5 bg-[#0B0F17] p-1.5 rounded-xl border border-slate-800 font-mono text-xs">
+              <div className="flex flex-wrap items-center gap-1.5 bg-[#0B0F17] p-1.5 rounded-xl border border-slate-800 font-mono text-xs">
                 <button
                   onClick={() => setTokenFilter('all')}
                   className={`px-3 py-1 rounded-lg font-bold transition-all ${

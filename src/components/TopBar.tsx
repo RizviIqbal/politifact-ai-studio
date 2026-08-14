@@ -54,24 +54,21 @@ export const TopBar: React.FC<TopBarProps> = ({
   return (
     <header className="bg-[#0B0F17]/90 border-b border-slate-800 sticky top-0 z-20 py-3.5 px-4 sm:px-8 backdrop-blur-md font-sans">
       <div className="flex items-center justify-between gap-4">
-        {/* Left: Dynamic Breadcrumb */}
-        <div className="flex items-center space-x-3">
-          {onToggleMobileNav && (
-            <button
-              onClick={onToggleMobileNav}
-              className="p-1.5 rounded-lg bg-[#111827] text-slate-400 hover:text-white border border-slate-800 md:hidden"
-            >
-              <Menu className="w-5 h-5" />
-            </button>
-          )}
+        {/* Left: Dynamic Breadcrumb & Mobile Menu */}
+        <div className="flex items-center space-x-2.5 min-w-0">
+          <button
+            onClick={onToggleMobileNav}
+            className="p-2 rounded-xl bg-[#111827] text-slate-300 hover:text-white border border-slate-800 md:hidden flex-shrink-0 active:scale-95 transition-all"
+            title="Open Hub Menu"
+          >
+            <Menu className="w-4 h-4 text-amber-400" />
+          </button>
 
-          <div className="flex items-center space-x-2 font-mono text-xs">
-            <span className="text-slate-400 font-medium hidden sm:inline-block">PolitiFact AI</span>
-            <span className="text-slate-400 hidden sm:inline-block">/</span>
-            <span className={`px-2.5 py-0.5 rounded-lg border font-bold ${current.badgeClass}`}>
+          <div className="flex items-center space-x-2 font-mono text-xs min-w-0">
+            <span className={`px-2 py-0.5 rounded-lg border font-bold text-xs flex-shrink-0 ${current.badgeClass}`}>
               {current.breadcrumb}
             </span>
-            <span className="text-slate-100 font-bold font-sans text-sm sm:text-base tracking-tight">
+            <span className="text-slate-100 font-bold font-sans text-sm sm:text-base tracking-tight truncate">
               {current.title}
             </span>
           </div>

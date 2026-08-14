@@ -1,0 +1,902 @@
+[
+  {
+    "x": -12.5,
+    "y": -10.61,
+    "label": "pants-fire",
+    "statement": "Says Russia is completely responsible for all US economic inflation."
+  },
+  {
+    "x": -12.39,
+    "y": -7.54,
+    "label": "pants-fire",
+    "statement": "Sample political claim #2 regarding policy and economic statistics."
+  },
+  {
+    "x": -12.45,
+    "y": -15.24,
+    "label": "pants-fire",
+    "statement": "Sample political claim #3 regarding policy and economic statistics."
+  },
+  {
+    "x": -10.84,
+    "y": -10.94,
+    "label": "pants-fire",
+    "statement": "Sample political claim #4 regarding policy and economic statistics."
+  },
+  {
+    "x": -12.76,
+    "y": -9.59,
+    "label": "pants-fire",
+    "statement": "Sample political claim #5 regarding policy and economic statistics."
+  },
+  {
+    "x": -11.19,
+    "y": -5.93,
+    "label": "pants-fire",
+    "statement": "Sample political claim #6 regarding policy and economic statistics."
+  },
+  {
+    "x": -9.7,
+    "y": -9.61,
+    "label": "pants-fire",
+    "statement": "Sample political claim #7 regarding policy and economic statistics."
+  },
+  {
+    "x": -14.58,
+    "y": -13.55,
+    "label": "pants-fire",
+    "statement": "Sample political claim #8 regarding policy and economic statistics."
+  },
+  {
+    "x": -11.14,
+    "y": -5.41,
+    "label": "pants-fire",
+    "statement": "Sample political claim #9 regarding policy and economic statistics."
+  },
+  {
+    "x": -11.85,
+    "y": -10.37,
+    "label": "pants-fire",
+    "statement": "Sample political claim #10 regarding policy and economic statistics."
+  },
+  {
+    "x": -10.14,
+    "y": -15.09,
+    "label": "pants-fire",
+    "statement": "Sample political claim #11 regarding policy and economic statistics."
+  },
+  {
+    "x": -13.09,
+    "y": -8.28,
+    "label": "pants-fire",
+    "statement": "Sample political claim #12 regarding policy and economic statistics."
+  },
+  {
+    "x": -8.94,
+    "y": -10.84,
+    "label": "pants-fire",
+    "statement": "Sample political claim #13 regarding policy and economic statistics."
+  },
+  {
+    "x": -10.68,
+    "y": -9.13,
+    "label": "pants-fire",
+    "statement": "Sample political claim #14 regarding policy and economic statistics."
+  },
+  {
+    "x": -9.26,
+    "y": -13.9,
+    "label": "pants-fire",
+    "statement": "Sample political claim #15 regarding policy and economic statistics."
+  },
+  {
+    "x": -10.01,
+    "y": -15.3,
+    "label": "pants-fire",
+    "statement": "Sample political claim #16 regarding policy and economic statistics."
+  },
+  {
+    "x": -21.17,
+    "y": -12.12,
+    "label": "pants-fire",
+    "statement": "Sample political claim #17 regarding policy and economic statistics."
+  },
+  {
+    "x": -15.21,
+    "y": -6.93,
+    "label": "pants-fire",
+    "statement": "Sample political claim #18 regarding policy and economic statistics."
+  },
+  {
+    "x": -9.68,
+    "y": -14.27,
+    "label": "pants-fire",
+    "statement": "Sample political claim #19 regarding policy and economic statistics."
+  },
+  {
+    "x": -9.03,
+    "y": -13.51,
+    "label": "pants-fire",
+    "statement": "Sample political claim #20 regarding policy and economic statistics."
+  },
+  {
+    "x": -12.3,
+    "y": -11.03,
+    "label": "pants-fire",
+    "statement": "Sample political claim #21 regarding policy and economic statistics."
+  },
+  {
+    "x": -11.6,
+    "y": -7.13,
+    "label": "pants-fire",
+    "statement": "Sample political claim #22 regarding policy and economic statistics."
+  },
+  {
+    "x": -9.77,
+    "y": -8.78,
+    "label": "pants-fire",
+    "statement": "Sample political claim #23 regarding policy and economic statistics."
+  },
+  {
+    "x": -9.73,
+    "y": -8.33,
+    "label": "pants-fire",
+    "statement": "Sample political claim #24 regarding policy and economic statistics."
+  },
+  {
+    "x": -14.19,
+    "y": -12.51,
+    "label": "pants-fire",
+    "statement": "Sample political claim #25 regarding policy and economic statistics."
+  },
+  {
+    "x": -7.64,
+    "y": -2.25,
+    "label": "false",
+    "statement": "The health care bill creates government death panels for seniors."
+  },
+  {
+    "x": -6.88,
+    "y": 4.18,
+    "label": "false",
+    "statement": "Sample political claim #27 regarding policy and economic statistics."
+  },
+  {
+    "x": -8.87,
+    "y": -7.85,
+    "label": "false",
+    "statement": "Sample political claim #28 regarding policy and economic statistics."
+  },
+  {
+    "x": -3.31,
+    "y": 0.98,
+    "label": "false",
+    "statement": "Sample political claim #29 regarding policy and economic statistics."
+  },
+  {
+    "x": -4.23,
+    "y": -1.07,
+    "label": "false",
+    "statement": "Sample political claim #30 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.01,
+    "y": -4.33,
+    "label": "false",
+    "statement": "Sample political claim #31 regarding policy and economic statistics."
+  },
+  {
+    "x": -10.98,
+    "y": -5.86,
+    "label": "false",
+    "statement": "Sample political claim #32 regarding policy and economic statistics."
+  },
+  {
+    "x": -2.66,
+    "y": -9.05,
+    "label": "false",
+    "statement": "Sample political claim #33 regarding policy and economic statistics."
+  },
+  {
+    "x": -5.88,
+    "y": -3.11,
+    "label": "false",
+    "statement": "Sample political claim #34 regarding policy and economic statistics."
+  },
+  {
+    "x": -7.1,
+    "y": -1.47,
+    "label": "false",
+    "statement": "Sample political claim #35 regarding policy and economic statistics."
+  },
+  {
+    "x": -3.97,
+    "y": 4.12,
+    "label": "false",
+    "statement": "Sample political claim #36 regarding policy and economic statistics."
+  },
+  {
+    "x": -3.83,
+    "y": -6.13,
+    "label": "false",
+    "statement": "Sample political claim #37 regarding policy and economic statistics."
+  },
+  {
+    "x": -7.97,
+    "y": -6.91,
+    "label": "false",
+    "statement": "Sample political claim #38 regarding policy and economic statistics."
+  },
+  {
+    "x": -2.67,
+    "y": -5.98,
+    "label": "false",
+    "statement": "Sample political claim #39 regarding policy and economic statistics."
+  },
+  {
+    "x": -6.25,
+    "y": -1.38,
+    "label": "false",
+    "statement": "Sample political claim #40 regarding policy and economic statistics."
+  },
+  {
+    "x": -8.53,
+    "y": -5.03,
+    "label": "false",
+    "statement": "Sample political claim #41 regarding policy and economic statistics."
+  },
+  {
+    "x": -12.44,
+    "y": -7.79,
+    "label": "false",
+    "statement": "Sample political claim #42 regarding policy and economic statistics."
+  },
+  {
+    "x": -7.99,
+    "y": -2.54,
+    "label": "false",
+    "statement": "Sample political claim #43 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.82,
+    "y": -4.06,
+    "label": "false",
+    "statement": "Sample political claim #44 regarding policy and economic statistics."
+  },
+  {
+    "x": -5.09,
+    "y": -3.41,
+    "label": "false",
+    "statement": "Sample political claim #45 regarding policy and economic statistics."
+  },
+  {
+    "x": -2.2,
+    "y": -0.87,
+    "label": "false",
+    "statement": "Sample political claim #46 regarding policy and economic statistics."
+  },
+  {
+    "x": -5.04,
+    "y": -7.54,
+    "label": "false",
+    "statement": "Sample political claim #47 regarding policy and economic statistics."
+  },
+  {
+    "x": -2.84,
+    "y": -2.67,
+    "label": "false",
+    "statement": "Sample political claim #48 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.71,
+    "y": -4.1,
+    "label": "false",
+    "statement": "Sample political claim #49 regarding policy and economic statistics."
+  },
+  {
+    "x": 0.84,
+    "y": -5.26,
+    "label": "false",
+    "statement": "Sample political claim #50 regarding policy and economic statistics."
+  },
+  {
+    "x": 3.58,
+    "y": 0.4,
+    "label": "barely-true",
+    "statement": "Unemployment dropped because millions of people just quit looking for work."
+  },
+  {
+    "x": -3.81,
+    "y": -3.95,
+    "label": "barely-true",
+    "statement": "Sample political claim #52 regarding policy and economic statistics."
+  },
+  {
+    "x": -2.53,
+    "y": 4.98,
+    "label": "barely-true",
+    "statement": "Sample political claim #53 regarding policy and economic statistics."
+  },
+  {
+    "x": 0.86,
+    "y": 2.41,
+    "label": "barely-true",
+    "statement": "Sample political claim #54 regarding policy and economic statistics."
+  },
+  {
+    "x": -10.32,
+    "y": 2.49,
+    "label": "barely-true",
+    "statement": "Sample political claim #55 regarding policy and economic statistics."
+  },
+  {
+    "x": -0.05,
+    "y": -1.92,
+    "label": "barely-true",
+    "statement": "Sample political claim #56 regarding policy and economic statistics."
+  },
+  {
+    "x": -4.2,
+    "y": -0.01,
+    "label": "barely-true",
+    "statement": "Sample political claim #57 regarding policy and economic statistics."
+  },
+  {
+    "x": 4.04,
+    "y": -3.69,
+    "label": "barely-true",
+    "statement": "Sample political claim #58 regarding policy and economic statistics."
+  },
+  {
+    "x": -3.5,
+    "y": 4.77,
+    "label": "barely-true",
+    "statement": "Sample political claim #59 regarding policy and economic statistics."
+  },
+  {
+    "x": -3.56,
+    "y": -1.27,
+    "label": "barely-true",
+    "statement": "Sample political claim #60 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.66,
+    "y": -4.34,
+    "label": "barely-true",
+    "statement": "Sample political claim #61 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.23,
+    "y": -4.23,
+    "label": "barely-true",
+    "statement": "Sample political claim #62 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.1,
+    "y": 0.01,
+    "label": "barely-true",
+    "statement": "Sample political claim #63 regarding policy and economic statistics."
+  },
+  {
+    "x": 5.99,
+    "y": 0.98,
+    "label": "barely-true",
+    "statement": "Sample political claim #64 regarding policy and economic statistics."
+  },
+  {
+    "x": 2.78,
+    "y": -4.56,
+    "label": "barely-true",
+    "statement": "Sample political claim #65 regarding policy and economic statistics."
+  },
+  {
+    "x": -2.43,
+    "y": 1.13,
+    "label": "barely-true",
+    "statement": "Sample political claim #66 regarding policy and economic statistics."
+  },
+  {
+    "x": 4.11,
+    "y": -5.88,
+    "label": "barely-true",
+    "statement": "Sample political claim #67 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.47,
+    "y": 2.07,
+    "label": "barely-true",
+    "statement": "Sample political claim #68 regarding policy and economic statistics."
+  },
+  {
+    "x": 3.37,
+    "y": 2.49,
+    "label": "barely-true",
+    "statement": "Sample political claim #69 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.82,
+    "y": -1.83,
+    "label": "barely-true",
+    "statement": "Sample political claim #70 regarding policy and economic statistics."
+  },
+  {
+    "x": -6.37,
+    "y": 0.68,
+    "label": "barely-true",
+    "statement": "Sample political claim #71 regarding policy and economic statistics."
+  },
+  {
+    "x": -2.67,
+    "y": 7.07,
+    "label": "barely-true",
+    "statement": "Sample political claim #72 regarding policy and economic statistics."
+  },
+  {
+    "x": -4.14,
+    "y": 1.12,
+    "label": "barely-true",
+    "statement": "Sample political claim #73 regarding policy and economic statistics."
+  },
+  {
+    "x": -7.49,
+    "y": -1.38,
+    "label": "barely-true",
+    "statement": "Sample political claim #74 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.09,
+    "y": 2.88,
+    "label": "barely-true",
+    "statement": "Sample political claim #75 regarding policy and economic statistics."
+  },
+  {
+    "x": 6.07,
+    "y": 1.85,
+    "label": "half-true",
+    "statement": "We have created more clean energy jobs in the last four years than ever before."
+  },
+  {
+    "x": -2.91,
+    "y": 3.6,
+    "label": "half-true",
+    "statement": "Sample political claim #77 regarding policy and economic statistics."
+  },
+  {
+    "x": 2.81,
+    "y": 3.72,
+    "label": "half-true",
+    "statement": "Sample political claim #78 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.45,
+    "y": 5.97,
+    "label": "half-true",
+    "statement": "Sample political claim #79 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.31,
+    "y": 4.45,
+    "label": "half-true",
+    "statement": "Sample political claim #80 regarding policy and economic statistics."
+  },
+  {
+    "x": 5.46,
+    "y": 4.13,
+    "label": "half-true",
+    "statement": "Sample political claim #81 regarding policy and economic statistics."
+  },
+  {
+    "x": 2.0,
+    "y": 9.53,
+    "label": "half-true",
+    "statement": "Sample political claim #82 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.85,
+    "y": 0.96,
+    "label": "half-true",
+    "statement": "Sample political claim #83 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.39,
+    "y": 7.19,
+    "label": "half-true",
+    "statement": "Sample political claim #84 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.42,
+    "y": 3.82,
+    "label": "half-true",
+    "statement": "Sample political claim #85 regarding policy and economic statistics."
+  },
+  {
+    "x": 5.19,
+    "y": 0.2,
+    "label": "half-true",
+    "statement": "Sample political claim #86 regarding policy and economic statistics."
+  },
+  {
+    "x": -5.04,
+    "y": 3.05,
+    "label": "half-true",
+    "statement": "Sample political claim #87 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.8,
+    "y": -0.13,
+    "label": "half-true",
+    "statement": "Sample political claim #88 regarding policy and economic statistics."
+  },
+  {
+    "x": 4.05,
+    "y": 4.13,
+    "label": "half-true",
+    "statement": "Sample political claim #89 regarding policy and economic statistics."
+  },
+  {
+    "x": -2.48,
+    "y": 3.81,
+    "label": "half-true",
+    "statement": "Sample political claim #90 regarding policy and economic statistics."
+  },
+  {
+    "x": 0.31,
+    "y": -3.19,
+    "label": "half-true",
+    "statement": "Sample political claim #91 regarding policy and economic statistics."
+  },
+  {
+    "x": 2.59,
+    "y": 1.84,
+    "label": "half-true",
+    "statement": "Sample political claim #92 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.61,
+    "y": 3.83,
+    "label": "half-true",
+    "statement": "Sample political claim #93 regarding policy and economic statistics."
+  },
+  {
+    "x": 2.71,
+    "y": -0.02,
+    "label": "half-true",
+    "statement": "Sample political claim #94 regarding policy and economic statistics."
+  },
+  {
+    "x": 2.4,
+    "y": 5.55,
+    "label": "half-true",
+    "statement": "Sample political claim #95 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.49,
+    "y": 3.33,
+    "label": "half-true",
+    "statement": "Sample political claim #96 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.01,
+    "y": 9.93,
+    "label": "half-true",
+    "statement": "Sample political claim #97 regarding policy and economic statistics."
+  },
+  {
+    "x": -5.52,
+    "y": 4.43,
+    "label": "half-true",
+    "statement": "Sample political claim #98 regarding policy and economic statistics."
+  },
+  {
+    "x": -0.07,
+    "y": 1.65,
+    "label": "half-true",
+    "statement": "Sample political claim #99 regarding policy and economic statistics."
+  },
+  {
+    "x": 7.66,
+    "y": 1.97,
+    "label": "half-true",
+    "statement": "Sample political claim #100 regarding policy and economic statistics."
+  },
+  {
+    "x": 13.84,
+    "y": 3.45,
+    "label": "mostly-true",
+    "statement": "70 percent of Americans support universal background checks for gun purchases."
+  },
+  {
+    "x": 7.23,
+    "y": 3.28,
+    "label": "mostly-true",
+    "statement": "Sample political claim #102 regarding policy and economic statistics."
+  },
+  {
+    "x": 3.58,
+    "y": 5.22,
+    "label": "mostly-true",
+    "statement": "Sample political claim #103 regarding policy and economic statistics."
+  },
+  {
+    "x": 5.01,
+    "y": 5.71,
+    "label": "mostly-true",
+    "statement": "Sample political claim #104 regarding policy and economic statistics."
+  },
+  {
+    "x": -1.37,
+    "y": 12.01,
+    "label": "mostly-true",
+    "statement": "Sample political claim #105 regarding policy and economic statistics."
+  },
+  {
+    "x": 5.42,
+    "y": 11.1,
+    "label": "mostly-true",
+    "statement": "Sample political claim #106 regarding policy and economic statistics."
+  },
+  {
+    "x": 2.48,
+    "y": 6.02,
+    "label": "mostly-true",
+    "statement": "Sample political claim #107 regarding policy and economic statistics."
+  },
+  {
+    "x": 17.08,
+    "y": 1.96,
+    "label": "mostly-true",
+    "statement": "Sample political claim #108 regarding policy and economic statistics."
+  },
+  {
+    "x": 0.77,
+    "y": 3.09,
+    "label": "mostly-true",
+    "statement": "Sample political claim #109 regarding policy and economic statistics."
+  },
+  {
+    "x": 7.65,
+    "y": 7.43,
+    "label": "mostly-true",
+    "statement": "Sample political claim #110 regarding policy and economic statistics."
+  },
+  {
+    "x": 10.52,
+    "y": 4.1,
+    "label": "mostly-true",
+    "statement": "Sample political claim #111 regarding policy and economic statistics."
+  },
+  {
+    "x": 0.39,
+    "y": 3.48,
+    "label": "mostly-true",
+    "statement": "Sample political claim #112 regarding policy and economic statistics."
+  },
+  {
+    "x": 10.34,
+    "y": 6.63,
+    "label": "mostly-true",
+    "statement": "Sample political claim #113 regarding policy and economic statistics."
+  },
+  {
+    "x": -0.85,
+    "y": 4.88,
+    "label": "mostly-true",
+    "statement": "Sample political claim #114 regarding policy and economic statistics."
+  },
+  {
+    "x": 10.89,
+    "y": 12.44,
+    "label": "mostly-true",
+    "statement": "Sample political claim #115 regarding policy and economic statistics."
+  },
+  {
+    "x": 7.97,
+    "y": 6.08,
+    "label": "mostly-true",
+    "statement": "Sample political claim #116 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.66,
+    "y": 2.05,
+    "label": "mostly-true",
+    "statement": "Sample political claim #117 regarding policy and economic statistics."
+  },
+  {
+    "x": 6.16,
+    "y": 6.76,
+    "label": "mostly-true",
+    "statement": "Sample political claim #118 regarding policy and economic statistics."
+  },
+  {
+    "x": 8.03,
+    "y": 3.33,
+    "label": "mostly-true",
+    "statement": "Sample political claim #119 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.97,
+    "y": 2.28,
+    "label": "mostly-true",
+    "statement": "Sample political claim #120 regarding policy and economic statistics."
+  },
+  {
+    "x": 1.95,
+    "y": 7.25,
+    "label": "mostly-true",
+    "statement": "Sample political claim #121 regarding policy and economic statistics."
+  },
+  {
+    "x": -2.09,
+    "y": 3.83,
+    "label": "mostly-true",
+    "statement": "Sample political claim #122 regarding policy and economic statistics."
+  },
+  {
+    "x": 7.57,
+    "y": 10.33,
+    "label": "mostly-true",
+    "statement": "Sample political claim #123 regarding policy and economic statistics."
+  },
+  {
+    "x": 6.25,
+    "y": 8.5,
+    "label": "mostly-true",
+    "statement": "Sample political claim #124 regarding policy and economic statistics."
+  },
+  {
+    "x": 4.6,
+    "y": 2.39,
+    "label": "mostly-true",
+    "statement": "Sample political claim #125 regarding policy and economic statistics."
+  },
+  {
+    "x": 8.64,
+    "y": 14.35,
+    "label": "true",
+    "statement": "The state gas tax has not been raised in over twenty-five years."
+  },
+  {
+    "x": 14.48,
+    "y": 10.71,
+    "label": "true",
+    "statement": "Sample political claim #127 regarding policy and economic statistics."
+  },
+  {
+    "x": 22.66,
+    "y": 8.89,
+    "label": "true",
+    "statement": "Sample political claim #128 regarding policy and economic statistics."
+  },
+  {
+    "x": 13.17,
+    "y": 10.08,
+    "label": "true",
+    "statement": "Sample political claim #129 regarding policy and economic statistics."
+  },
+  {
+    "x": 10.22,
+    "y": 17.11,
+    "label": "true",
+    "statement": "Sample political claim #130 regarding policy and economic statistics."
+  },
+  {
+    "x": 16.27,
+    "y": 4.1,
+    "label": "true",
+    "statement": "Sample political claim #131 regarding policy and economic statistics."
+  },
+  {
+    "x": 9.6,
+    "y": 10.5,
+    "label": "true",
+    "statement": "Sample political claim #132 regarding policy and economic statistics."
+  },
+  {
+    "x": 13.74,
+    "y": 4.28,
+    "label": "true",
+    "statement": "Sample political claim #133 regarding policy and economic statistics."
+  },
+  {
+    "x": 3.11,
+    "y": 2.33,
+    "label": "true",
+    "statement": "Sample political claim #134 regarding policy and economic statistics."
+  },
+  {
+    "x": 10.75,
+    "y": 8.64,
+    "label": "true",
+    "statement": "Sample political claim #135 regarding policy and economic statistics."
+  },
+  {
+    "x": 12.21,
+    "y": 6.31,
+    "label": "true",
+    "statement": "Sample political claim #136 regarding policy and economic statistics."
+  },
+  {
+    "x": 6.72,
+    "y": 1.92,
+    "label": "true",
+    "statement": "Sample political claim #137 regarding policy and economic statistics."
+  },
+  {
+    "x": 12.15,
+    "y": 10.3,
+    "label": "true",
+    "statement": "Sample political claim #138 regarding policy and economic statistics."
+  },
+  {
+    "x": 14.48,
+    "y": 11.77,
+    "label": "true",
+    "statement": "Sample political claim #139 regarding policy and economic statistics."
+  },
+  {
+    "x": 10.33,
+    "y": 13.72,
+    "label": "true",
+    "statement": "Sample political claim #140 regarding policy and economic statistics."
+  },
+  {
+    "x": 10.52,
+    "y": 6.69,
+    "label": "true",
+    "statement": "Sample political claim #141 regarding policy and economic statistics."
+  },
+  {
+    "x": 9.18,
+    "y": 6.95,
+    "label": "true",
+    "statement": "Sample political claim #142 regarding policy and economic statistics."
+  },
+  {
+    "x": 3.42,
+    "y": 9.55,
+    "label": "true",
+    "statement": "Sample political claim #143 regarding policy and economic statistics."
+  },
+  {
+    "x": 11.87,
+    "y": 7.73,
+    "label": "true",
+    "statement": "Sample political claim #144 regarding policy and economic statistics."
+  },
+  {
+    "x": 8.5,
+    "y": 10.3,
+    "label": "true",
+    "statement": "Sample political claim #145 regarding policy and economic statistics."
+  },
+  {
+    "x": 17.01,
+    "y": 9.13,
+    "label": "true",
+    "statement": "Sample political claim #146 regarding policy and economic statistics."
+  },
+  {
+    "x": 9.22,
+    "y": 6.93,
+    "label": "true",
+    "statement": "Sample political claim #147 regarding policy and economic statistics."
+  },
+  {
+    "x": 10.76,
+    "y": 4.57,
+    "label": "true",
+    "statement": "Sample political claim #148 regarding policy and economic statistics."
+  },
+  {
+    "x": 10.56,
+    "y": 9.21,
+    "label": "true",
+    "statement": "Sample political claim #149 regarding policy and economic statistics."
+  },
+  {
+    "x": 17.46,
+    "y": 12.3,
+    "label": "true",
+    "statement": "Sample political claim #150 regarding policy and economic statistics."
+  }
+]

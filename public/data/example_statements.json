@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ex-pf",
+    "label": "pants-fire",
+    "speaker": "Social Media / Viral Post",
+    "statement": "The CDC secretly admitted in court documents that COVID vaccines contain tracking microchips.",
+    "justification": "The claim cites a fabricated court document. CDC public records and independent laboratory analyses confirm no microchips or tracking devices exist in any approved vaccine."
+  },
+  {
+    "id": "ex-false",
+    "label": "false",
+    "speaker": "Campaign TV Ad",
+    "statement": "My opponent voted to completely eliminate Social Security benefits for all current retirees.",
+    "justification": "Legislative records show the opponent voted on a broader budget amendment that proposed reducing cost-of-living adjustments by 1%, not eliminating benefits for retirees."
+  },
+  {
+    "id": "ex-bt",
+    "label": "barely-true",
+    "speaker": "US Senator",
+    "statement": "Our state lost 50,000 manufacturing jobs during the last administration.",
+    "justification": "While 50,000 jobs were lost over a decade, most of the decline occurred due to global economic trends prior to the administration in question, leaving out critical context."
+  },
+  {
+    "id": "ex-ht",
+    "label": "half-true",
+    "speaker": "State Governor",
+    "statement": "We cut state income taxes for middle-class families by 15 percent this year.",
+    "justification": "The state did reduce income tax rates for the middle tax bracket, but simultaneously increased local sales taxes, resulting in a net tax cut smaller than claimed."
+  },
+  {
+    "id": "ex-mt",
+    "label": "mostly-true",
+    "speaker": "Congressperson",
+    "statement": "Over 80 percent of small business owners say access to affordable healthcare is a top issue.",
+    "justification": "A recent National Small Business Association survey found 78% of surveyed business owners listed healthcare costs as a major operational concern, matching the claim closely."
+  },
+  {
+    "id": "ex-true",
+    "label": "true",
+    "speaker": "Labor Department Official",
+    "statement": "The federal minimum wage has remained at .25 per hour since July 2009.",
+    "justification": "Under the Fair Labor Standards Act amendment of 2007, the federal minimum wage rose to .25 on July 24, 2009, and has not been raised by Congress since."
+  }
+]

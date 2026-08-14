@@ -1,0 +1,218 @@
+[
+  {
+    "model": "BERT",
+    "input": "stmt_only",
+    "accuracy": 0.271065,
+    "macro_f1": 0.268408,
+    "weighted_f1": 0.267840,
+    "type": "Transformer",
+    "representation": null
+  },
+  {
+    "model": "BERT",
+    "input": "stmt_just",
+    "accuracy": 0.269475,
+    "macro_f1": 0.253599,
+    "weighted_f1": 0.262990,
+    "type": "Transformer",
+    "representation": null
+  },
+  {
+    "model": "BiLSTM",
+    "input": "stmt_only",
+    "accuracy": 0.232114,
+    "macro_f1": 0.229443,
+    "weighted_f1": 0.228983,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "BiLSTM",
+    "input": "stmt_just",
+    "accuracy": 0.230525,
+    "macro_f1": 0.224345,
+    "weighted_f1": 0.224613,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "BiGRU",
+    "input": "stmt_only",
+    "accuracy": 0.241653,
+    "macro_f1": 0.231419,
+    "weighted_f1": 0.236371,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "BiGRU",
+    "input": "stmt_just",
+    "accuracy": 0.221781,
+    "macro_f1": 0.211913,
+    "weighted_f1": 0.212379,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "LSTM",
+    "input": "stmt_only",
+    "accuracy": 0.233704,
+    "macro_f1": 0.224307,
+    "weighted_f1": 0.226419,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "LSTM",
+    "input": "stmt_just",
+    "accuracy": 0.190779,
+    "macro_f1": 0.091881,
+    "weighted_f1": 0.104172,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "GRU",
+    "input": "stmt_only",
+    "accuracy": 0.234499,
+    "macro_f1": 0.212588,
+    "weighted_f1": 0.217459,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "GRU",
+    "input": "stmt_just",
+    "accuracy": 0.205087,
+    "macro_f1": 0.076217,
+    "weighted_f1": 0.091344,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "SimpleRNN",
+    "input": "stmt_only",
+    "accuracy": 0.143879,
+    "macro_f1": 0.132868,
+    "weighted_f1": 0.130045,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "SimpleRNN",
+    "input": "stmt_just",
+    "accuracy": 0.171701,
+    "macro_f1": 0.118469,
+    "weighted_f1": 0.130829,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "BiSimpleRNN",
+    "input": "stmt_only",
+    "accuracy": 0.203498,
+    "macro_f1": 0.191583,
+    "weighted_f1": 0.192675,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "BiSimpleRNN",
+    "input": "stmt_just",
+    "accuracy": 0.206677,
+    "macro_f1": 0.191484,
+    "weighted_f1": 0.193165,
+    "type": "NN",
+    "representation": null
+  },
+  {
+    "model": "RandomForest",
+    "input": "stmt_only",
+    "accuracy": 0.252782,
+    "macro_f1": 0.247355,
+    "weighted_f1": 0.250899,
+    "type": "Classical",
+    "representation": "tfidf"
+  },
+  {
+    "model": "RandomForest",
+    "input": "stmt_just",
+    "accuracy": 0.220986,
+    "macro_f1": 0.202150,
+    "weighted_f1": 0.218740,
+    "type": "Classical",
+    "representation": "tfidf"
+  },
+  {
+    "model": "LogisticRegression",
+    "input": "stmt_only",
+    "accuracy": 0.240859,
+    "macro_f1": 0.238180,
+    "weighted_f1": 0.241790,
+    "type": "Classical",
+    "representation": "tfidf"
+  },
+  {
+    "model": "LogisticRegression",
+    "input": "stmt_just",
+    "accuracy": 0.218601,
+    "macro_f1": 0.202809,
+    "weighted_f1": 0.213144,
+    "type": "Classical",
+    "representation": "tfidf"
+  },
+  {
+    "model": "NaiveBayes",
+    "input": "stmt_only",
+    "accuracy": 0.243243,
+    "macro_f1": 0.217135,
+    "weighted_f1": 0.237521,
+    "type": "Classical",
+    "representation": "tfidf"
+  },
+  {
+    "model": "NaiveBayes",
+    "input": "stmt_just",
+    "accuracy": 0.236089,
+    "macro_f1": 0.212081,
+    "weighted_f1": 0.227780,
+    "type": "Classical",
+    "representation": "tfidf"
+  },
+  {
+    "model": "RandomForest",
+    "input": "stmt_only",
+    "accuracy": 0.278219,
+    "macro_f1": 0.240183,
+    "weighted_f1": 0.260755,
+    "type": "Classical",
+    "representation": "word2vec"
+  },
+  {
+    "model": "RandomForest",
+    "input": "stmt_just",
+    "accuracy": 0.243243,
+    "macro_f1": 0.193665,
+    "weighted_f1": 0.220786,
+    "type": "Classical",
+    "representation": "word2vec"
+  },
+  {
+    "model": "LogisticRegression",
+    "input": "stmt_only",
+    "accuracy": 0.236089,
+    "macro_f1": 0.230295,
+    "weighted_f1": 0.235967,
+    "type": "Classical",
+    "representation": "word2vec"
+  },
+  {
+    "model": "LogisticRegression",
+    "input": "stmt_just",
+    "accuracy": 0.229730,
+    "macro_f1": 0.217379,
+    "weighted_f1": 0.230813,
+    "type": "Classical",
+    "representation": "word2vec"
+  }
+]

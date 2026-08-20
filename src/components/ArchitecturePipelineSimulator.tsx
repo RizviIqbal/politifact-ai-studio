@@ -588,7 +588,7 @@ const modelInfo: Record<ModelArchitecture, {
 }> = {
   bert: {
     name: 'BERT Base',
-    f1: '0.2684',
+    f1: '0.2739',
     acc: '27.11%',
     embeddingType: '768d Contextual Transformer Vector',
     dim: '768 Dimensions',
@@ -597,12 +597,12 @@ const modelInfo: Record<ModelArchitecture, {
     mechanismExplain: 'Calculates pairwise attention matrices between all words in the claim.',
     contextWindow: 'Full Pairwise Attention',
     contextExplain: 'Sees full bidirectional sentence context simultaneously.',
-    educationalInsight: 'BERT achieves the highest performance (0.2684 Macro-F1, 27.11% Acc) because self-attention captures multi-word phrases like "cdc secretly admitted" as a unified context rather than isolated tokens.',
+    educationalInsight: 'BERT achieves the highest performance (0.2739 Macro-F1, 27.58% Acc) because self-attention captures multi-word phrases like "cdc secretly admitted" as a unified context rather than isolated tokens.',
     isBest: true,
   },
   bilstm: {
     name: 'BiLSTM',
-    f1: '0.2294',
+    f1: '0.2446',
     acc: '23.21%',
     embeddingType: '100d GloVe Dense Dual Vector',
     dim: '100 Dimensions',
@@ -611,7 +611,7 @@ const modelInfo: Record<ModelArchitecture, {
     mechanismExplain: 'Scans sequence left-to-right (h_fwd) and right-to-left (h_bwd).',
     contextWindow: 'Sequential Left-to-Right + Right-to-Left',
     contextExplain: 'Preserves word order and long-range sequential dependencies.',
-    educationalInsight: 'BiLSTM achieves 0.2294 Macro-F1 (23.21% Acc) because bidirectional scanning preserves word order and prevents gradient decay across long political claims.',
+    educationalInsight: 'BiLSTM achieves 0.2446 Macro-F1 (25.36% Acc) because bidirectional scanning preserves word order and prevents gradient decay across long political claims.',
   },
   gru: {
     name: 'Unidirectional GRU',

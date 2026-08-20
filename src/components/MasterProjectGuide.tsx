@@ -67,8 +67,8 @@ export const MasterProjectGuide: React.FC = () => {
               <tr className="bg-purple-500/10">
                 <td className="py-2.5 px-3 font-bold text-purple-300">BERT Base (Transformer)</td>
                 <td className="py-2.5 px-3 text-slate-400 font-mono">Statement Only</td>
-                <td className="py-2.5 px-3 font-mono font-bold text-purple-400">0.2684</td>
-                <td className="py-2.5 px-3 font-mono text-white">27.11%</td>
+                <td className="py-2.5 px-3 font-mono font-bold text-purple-400">0.2739</td>
+                <td className="py-2.5 px-3 font-mono text-white">27.58%</td>
                 <td className="py-2.5 px-3 font-mono font-bold text-purple-300">Top Neural Overall</td>
               </tr>
               <tr>
@@ -88,15 +88,15 @@ export const MasterProjectGuide: React.FC = () => {
               <tr className="bg-emerald-500/10">
                 <td className="py-2.5 px-3 font-bold text-emerald-300">BiGRU (Bidirectional)</td>
                 <td className="py-2.5 px-3 text-slate-400 font-mono">Statement Only</td>
-                <td className="py-2.5 px-3 font-mono font-bold text-emerald-400">0.2314</td>
-                <td className="py-2.5 px-3 font-mono text-white">24.17%</td>
+                <td className="py-2.5 px-3 font-mono font-bold text-emerald-400">0.2335</td>
+                <td className="py-2.5 px-3 font-mono text-white">23.69%</td>
                 <td className="py-2.5 px-3 font-mono font-bold text-emerald-300">Top RNN Architecture</td>
               </tr>
               <tr className="bg-emerald-500/10">
                 <td className="py-2.5 px-3 font-bold text-emerald-300">BiLSTM (Bidirectional)</td>
                 <td className="py-2.5 px-3 text-slate-400 font-mono">Statement Only</td>
-                <td className="py-2.5 px-3 font-mono font-bold text-emerald-400">0.2294</td>
-                <td className="py-2.5 px-3 font-mono text-white">23.21%</td>
+                <td className="py-2.5 px-3 font-mono font-bold text-emerald-400">0.2446</td>
+                <td className="py-2.5 px-3 font-mono text-white">25.36%</td>
                 <td className="py-2.5 px-3 font-mono text-emerald-300">2nd Best RNN</td>
               </tr>
               <tr className="bg-rose-500/10">

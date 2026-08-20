@@ -75,7 +75,7 @@ export const InteractiveLearningLab: React.FC = () => {
               <span>Module 2: The Evidence Paradox (Ablation Study)</span>
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">
-              Our research tested whether providing models with human fact-checker evidence improves accuracy. Across classical ML and neural networks, adding justification text resulted in no statistically significant gain (BiLSTM F1: 0.2294 vs 0.2243; BERT F1: 0.2684 vs 0.2536).
+              Our research tested whether providing models with human fact-checker evidence improves accuracy. Across classical ML and neural networks, adding justification text resulted in no statistically significant gain (BiLSTM F1: 0.2446 vs 0.2068; BERT F1: 0.2739 vs 0.2497).
             </p>
           </div>
         )}

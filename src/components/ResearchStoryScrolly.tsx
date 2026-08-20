@@ -39,14 +39,14 @@ export const ResearchStoryScrolly: React.FC = () => {
   }, []);
 
   const ablationData = [
-    { model: 'BERT', stmt_only: 0.2684, stmt_just: 0.2536 },
+    { model: 'BERT', stmt_only: 0.2739, stmt_just: 0.2497 },
     { model: 'RandomForest', stmt_only: 0.2474, stmt_just: 0.2022 },
     { model: 'LogReg', stmt_only: 0.2382, stmt_just: 0.2028 },
-    { model: 'BiGRU', stmt_only: 0.2314, stmt_just: 0.2119 },
-    { model: 'BiLSTM', stmt_only: 0.2294, stmt_just: 0.2244 },
-    { model: 'LSTM', stmt_only: 0.2243, stmt_just: 0.0919 },
+    { model: 'BiGRU', stmt_only: 0.2335, stmt_just: 0.2042 },
+    { model: 'BiLSTM', stmt_only: 0.2446, stmt_just: 0.2068 },
+    { model: 'LSTM', stmt_only: 0.1910, stmt_just: 0.0853 },
     { model: 'NaiveBayes', stmt_only: 0.2171, stmt_just: 0.2121 },
-    { model: 'GRU', stmt_only: 0.2126, stmt_just: 0.0762 },
+    { model: 'GRU', stmt_only: 0.1195, stmt_just: 0.0784 },
     { model: 'BiSimpleRNN', stmt_only: 0.1916, stmt_just: 0.1915 },
     { model: 'SimpleRNN', stmt_only: 0.1329, stmt_just: 0.1185 },
   ];
@@ -128,7 +128,7 @@ export const ResearchStoryScrolly: React.FC = () => {
 
         <div className="bg-[#0B0F17] p-4 rounded-xl border border-slate-800 text-xs font-sans text-slate-300 space-y-1">
           <p>
-            💡 <strong className="text-amber-400">Key Research Finding:</strong> For our best model (BERT), Statement-Only F1 was <span className="font-mono text-white">0.2684</span> vs. Statement+Justification F1 of <span className="font-mono text-white">0.2536</span>. Adding evidence actually <strong className="text-rose-400">decreased</strong> performance. McNemar&apos;s test confirms p = 0.1591 — the difference is not statistically significant.
+            💡 <strong className="text-amber-400">Key Research Finding:</strong> For our best model (BERT), Statement-Only F1 was <span className="font-mono text-white">0.2739</span> vs. Statement+Justification F1 of <span className="font-mono text-white">0.2497</span>. Adding evidence actually <strong className="text-rose-400">decreased</strong> performance. McNemar&apos;s test confirms p = 0.1495 — the difference is not statistically significant.
           </p>
         </div>
       </motion.div>

@@ -84,7 +84,7 @@ export const AboutResearch: React.FC = () => {
           <li className="flex items-start space-x-3 bg-[#0B0F17] p-4 rounded-xl border border-slate-800">
             <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 mt-1.5 flex-shrink-0" />
             <div>
-              <strong className="text-white">Model sophistication helps, but hits a ceiling:</strong> Transformer and bidirectional neural models (BERT Macro-F1 = 0.2684, BiGRU = 0.2314, BiLSTM = 0.2294) outperform classical TF-IDF models (LR Macro-F1 = 0.2382, NB = 0.2171), but all models face a hard performance ceiling around 24-28% accuracy due to 6-class scalar truth ambiguity.
+              <strong className="text-white">Model sophistication helps, but hits a ceiling:</strong> Transformer and bidirectional neural models (BERT Macro-F1 = 0.2739, BiLSTM = 0.2446, BiGRU = 0.2335) outperform classical TF-IDF models (LR Macro-F1 = 0.2382, NB = 0.2171), but all models face a hard performance ceiling around 24-28% accuracy due to 6-class scalar truth ambiguity.
             </div>
           </li>
 

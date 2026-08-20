@@ -84,7 +84,7 @@ export const ModelComparisonDashboard: React.FC = () => {
             <span className="text-xs sm:text-sm text-emerald-400 font-bold block mt-0.5">
               {topModel
                 ? `${(topModel.accuracy * 100).toFixed(1)}% Acc • ${topModel.macro_f1.toFixed(4)} F1`
-                : '27.1% Acc • 0.2684 F1'}
+                : '27.6% Acc • 0.2739 F1'}
             </span>
           </div>
           <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">

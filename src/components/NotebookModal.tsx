@@ -39,11 +39,11 @@ print(f"Vocabulary size: {X_train.shape[1]} n-gram features")`,
       title: '3. Model Architecture Training & Evidence Ablation Study',
       summary: 'Trains 11 models comparing Statement-Only vs. Statement+Justification conditions. Evaluates BERT Base, BiLSTM, and Classical models.',
       code: `# Model Benchmark Comparison Summary:
-# BERT Transformer: Accuracy = 27.11%, Macro-F1 = 0.2684
+# BERT Transformer: Accuracy = 27.58%, Macro-F1 = 0.2739
 # Random Forest (Word2Vec): Accuracy = 27.82%, Macro-F1 = 0.2402
 # Logistic Regression (TF-IDF): Accuracy = 24.09%, Macro-F1 = 0.2382
 # BiGRU (Dual-Pass): Accuracy = 24.17%, Macro-F1 = 0.2314
-# BiLSTM (Dual-Pass): Accuracy = 23.21%, Macro-F1 = 0.2294
+# BiLSTM (Dual-Pass): Accuracy = 25.36%, Macro-F1 = 0.2446
 # McNemar's Chi-Squared Significance Test: p = 0.1591 (No statistically significant gain from justification alone)`,
     },
     {
@@ -124,7 +124,7 @@ with open("public/data/model_weights.json", "w") as f:
                 Top Neural Model
               </span>
               <div className="text-xl font-bold text-white">BERT Base</div>
-              <p className="text-xs text-slate-400">Macro-F1: 0.2684 (27.11% Acc)</p>
+              <p className="text-xs text-slate-400">Macro-F1: 0.2739 (27.58% Acc)</p>
             </div>
 
             <div className="bg-[#111827] p-4 rounded-2xl border border-slate-800 space-y-1 shadow-md">

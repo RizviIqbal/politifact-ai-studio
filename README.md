@@ -201,5 +201,5 @@ Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more infor
 ---
 
 <div align="center">
-  <sub>Developed for CSE 440 (Natural Language Processing) • Built with ❤️ using Next.js & TypeScript</sub>
+  <sub>Developed for CSE 440 (Natural Language Processing) • Built using Next.js & TypeScript</sub>
 </div>
